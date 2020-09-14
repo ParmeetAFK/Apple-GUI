@@ -39,7 +39,7 @@ back.grid(row=1,column=1,padx=8,pady=8)
 
 #----------------------- HEADING Cotent --------------------
 #----------------------- LOGO -------------------------
-app_logo = PhotoImage(file=r"C:\Users\Parme\Desktop\Apple_8_Bit.png").zoom(3,3)
+app_logo = PhotoImage(file="Apple_8_Bit.png").zoom(3,3)
 head.create_image(15,3, anchor=NW, image=app_logo)
 
 #-----------------------  NAME OF APP -------------------------
@@ -53,10 +53,10 @@ Label(head, text="APPLE DOCTOR",
 #----------------------- Image Open Label & Button ----------------------------
 
 Button(app,
-      text="Please Select a File",
+      text="Select a File",
       bg='#f8f8f8',
       fg='#000',
-      font=('Arial Bold',10),
+      font=('Doppio One',15),
       relief='ridge',
       bd=5,
       command=ofile #ofile is Function declared in FUNCTION SECTION
@@ -79,7 +79,7 @@ Button(app,
       text="Lets Check",
       bg='#f8f8f8',
       fg='#000',
-      font=('Arial Bold',10),
+      font=('Doppio One',15),
       relief='ridge',
       bd=5,
       command=lambda: mainapp(path) #mainapp is Function which will call your ML program
@@ -90,7 +90,7 @@ Button(app,
 
 #----------------------- BACKGROUND IMAGE --------------------
 
-bg_img = PhotoImage(file=r"C:\Users\Parme\Desktop\fiber-apple.png")
+bg_img = PhotoImage(file="fiber-apple.png")
 back.create_image(1,3, anchor=NW, image=bg_img)
 
 root.mainloop()
